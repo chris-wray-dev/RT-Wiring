@@ -1,8 +1,5 @@
 body {
-    color: rgb(222, 222, 222);
-    background-color: rgb(46, 46, 46);
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(46, 46, 46) !important;
 }
 
 .rt-logo {
@@ -12,9 +9,9 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: rgba(245, 195, 78, 0.735);
-    margin: 0 10px;
+    text-decoration: none !important;
+    color: rgb(245, 195, 78) !important;
+    margin: 0 10px !important;
 }
 
 hr {
@@ -25,7 +22,7 @@ p {
     font-size: 1.3rem;
 }
 
-.navbar {
+#navbar {
     background-color: black;
     text-align: center;
     opacity: 0.8;
@@ -34,8 +31,11 @@ p {
     left: 0;
     right: 0;
     width: 100%;
+    transition: top 0.3s;
+    z-index: 999999;
 }
-.header {
+
+#header {
     display: inline-block;
     background-image: linear-gradient(rgba(0, 0, 0, 0.831), rgba(0, 0, 0, 0.468)), url(../resources/monaco.jpg);
     background-size: cover;
@@ -65,7 +65,7 @@ p {
     padding: 20px;
 }
 
-.about {
+#about {
     max-width: 800px;
     text-align: center;
     margin: auto;
@@ -73,14 +73,39 @@ p {
     min-height: 100vh;
 }
 
-.connectors-image {
-    height: 400px;
-    border-radius: 10px;
+.fa-bolt {
+    color: rgba(245, 195, 78);
 }
 
-.contact {
+.card {
+    margin: 50px 10px;
+}
+
+.connectors-image {
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#contact {
     color: rgb(255, 255, 255);
     background-color: rgb(58, 58, 58);
     text-align: center;
-    height: 800px;
+    min-height: 100vh;
+    position: relative;
+    padding: 10px;
 }
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+address {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Johnson@godaddy */

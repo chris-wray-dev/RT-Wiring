@@ -8,17 +8,21 @@
     <title>RT Wiring</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <div id="navbar">
+        <a href="#header">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </div>
-    <div class="header">
-        <img class="rt-logo" src="resources/RT_Wiring.png" alt="RT Wiring logo">
+    <div id="header">
+        <img class="rt-logo" src="resources/RT_Wiring_New_Big.png" alt="RT Wiring logo">
         <div class="company-objective">
             Specialising in motorsport electrical systems with 25 years experience
             at the top level of the sport
@@ -30,7 +34,109 @@
         <img class="team-logo" src="resources/Mercedes.png" alt="Mercedes logo"> -->
     </div>
 
-    <div class="about">
+    <div id="about">
+        <br>
+        <h3 class="text-white">About Us</h3>
+
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">Our Mission</div>
+            <div class="card-body">
+                <p class="card-text">
+                    RT Motorsport Wiring aims to produce wiring and electrical/electronic systems using the most up
+                    to date techniques and materials. We believe that we can produce the best electrical systems to
+                    fit your requirements and budget.
+                </p>
+            </div>
+            <div class="card-footer bg-light">
+                <i class="fas fa-bolt fa-4x"></i>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">Best Materials</div>
+            <div class="card-body">
+                <p class="card-text">
+                    We primarily use TE's Raychem wire, heatshrink and moulded parts because these are proven as the
+                    best
+                    products for the market. However, we can use alternative products to suit your budget.
+                </p>
+            </div>
+            <div class="card-footer bg-light">
+                <img src="resources/te-connectivity-logo.svg" alt="">
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">Quality Connectors</div>
+            <div class="card-body">
+                <p class="card-text">
+                    We recommend the use of Deutsch and Souriau connectors due to their lightweight and reliable
+                    properties. These connectors are specifically designed for the motorsport, defence, marine and
+                    aerospace industries.
+                </p>
+            </div>
+            <div class="card-footer bg-light">
+                <a href="https://www.souriau.com/en-en" target="_blank">
+                    <img class="connectors-image" src="resources/Souriau.jpg" alt="Souriau logo">
+                </a>
+                <a href=""></a>
+                <img class="connectors-image" src="resources/deutsche-connectors.jpeg" alt="Deutsch logo">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <br>
+        <h3 class="text-white">Contact Us</h3>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="contactName">Name</label>
+                    <input type="text" class="form-control" id="contacName">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email address</label>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="5"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <address>
+            <strong>RT Motorsport Wiring Ltd</strong><br>
+            Building 35F Scottow Enterprise Park<br>
+            Lamas Road<br>
+            Badersfield Scottow<br>
+            NR10 5FB<br>
+            Phone: +44 7769 844640
+        </address>
+    </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
+
+<!-- <div id="about">
         <p>
             RT Motorsport Wiring aims to produce wiring and electrical/electronic systems using the most up to date
             techniques and materials. We believe that we can produce the best electrical systems to fit your
@@ -58,32 +164,4 @@
         <p>
             We can build batches of harnesses or supply on-site labour at an agreed daily or hourly rate.
         </p>
-    </div>
-
-    <div class="contact">
-        <br>
-        <p>Contact Us</p>
-        <br>
-        <form class="contact-form" action="">
-            <label for="">Name</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="Email">Email</label>
-            <input type="email">
-            <br>
-            <br>
-            <label for="message">Please Enter your message</label>
-            <br>
-            <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </form>
-        </div>
-
-
-    </div>
-
-
-</body>
-
-</html>
+    </div> -->
