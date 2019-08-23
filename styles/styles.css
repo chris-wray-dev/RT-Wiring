@@ -3,9 +3,8 @@ body {
 }
 
 .rt-logo {
-    width: 400px;
-    max-width: 80vw;
-    margin-top: 20vh;
+    width: 300px;
+    margin-top: 100px;
 }
 
 a {
@@ -41,7 +40,8 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     text-align: center;
     margin: auto;
     width: 100%;  
@@ -53,7 +53,7 @@ p {
 }
 
 .company-objective {
-    color: rgba(216, 215, 215, 0.783);
+    color: rgba(216, 215, 215);
     font-size: 1.5rem;
     max-width: 800px;
     margin: auto;
@@ -92,7 +92,6 @@ p {
     background-color: rgb(58, 58, 58);
     text-align: center;
     min-height: 100vh;
-    position: relative;
     padding: 10px;
 }
 
@@ -102,10 +101,8 @@ p {
 }
 
 address {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin: 20px 0;
 }
+
 
 /* Johnson@godaddy */
